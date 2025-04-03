@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Volume of a right rectangular pyramid, PHP" />
+  <meta name="description" content="Volume of a sphere, PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Olivia TD" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,7 @@
     sizes="16x16"
     href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Volume of a right rectangular pyramid, PHP</title>
+  <title>Volume of a sphere, PHP</title>
 </head>
 
 <body>
@@ -38,20 +38,20 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Volume of a right rectangular pyramid, PHP</span>
+        <span class="mdl-layout-title">Volume of a sphere, PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/pyramid.png" alt="Image of pyramid with labeled sides" width="250" />
+        <img src="./images/volume-of-sphere.png" alt="Image of sphere with labeled sides" width="250" />
       </div>
       <br />
       <div class="page-content">
-        Formula: V = l * w * h / 3
+        Formula: 4/3 
         <br />
         <br />
         <br />
-        Please enter the pyramid's measurements (mm).
+        Please enter the pyramid's measurements (cm).
       </div>
       <div class="page-content-php">
         <form action="answer.php" method="GET">
@@ -63,10 +63,10 @@
               step="any"
               pattern="-?[0-9]*(\.[0-9]+)?"
               name="length-of-pyramid">
-            <label class="mdl-textfield__label" for="length-of-pyramid">Enter the length of the pyramid here (mm)</label>
+            <label class="mdl-textfield__label" for="length-of-pyramid">Enter the length of the pyramid here (cm)</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-          mm
+          cm
           <br />
           Width:
           <div class="mdl-textfield mdl-js-textfield">
@@ -76,10 +76,10 @@
               step="any"
               pattern="-?[0-9]*(\.[0-9]+)?"
               name="width-of-pyramid">
-            <label class="mdl-textfield__label" for="width-of-pyramid">Enter the width of the pyramid here (mm)</label>
+            <label class="mdl-textfield__label" for="width-of-pyramid">Enter the width of the pyramid here (cm)</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-          mm
+          cm
           <br />
           Height:
           <div class="mdl-textfield mdl-js-textfield">
@@ -89,10 +89,10 @@
               step="any"
               pattern="-?[0-9]*(\.[0-9]+)?"
               name="height-of-pyramid">
-            <label class="mdl-textfield__label" for="height-of-pyramid">Enter the height of the pyramid here (mm)</label>
+            <label class="mdl-textfield__label" for="height-of-pyramid">Enter the height of the pyramid here (cm)</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-          mm
+          cm
           <br />
           <!-- Accent-colored raised button with ripple -->
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"

@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Volume of a right rectangular pyramid, PHP" />
+  <meta name="description" content="Volume of a sphere, PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Olivia TD" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,7 @@
     sizes="16x16"
     href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Volume of a right rectangular pyramid, PHP</title>
+  <title>Volume of a sphere, PHP</title>
 </head>
 
 <body>
@@ -38,27 +38,25 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Volume of a right rectangular pyramid, PHP</span>
+        <span class="mdl-layout-title">Volume of a sphere, PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/pyramid.png" alt="Image of pyramid with labeled sides" width="250" />
+        <img src="./images/volume-of-sphere.png" alt="Image of sphere with labeled sides" width="250" />
       </div>
       <div class="page-content-php">
         <div id="user-info">
           <?php
           $lengthOfPyramid = $_GET["length-of-pyramid"];
-          $widthOfPyramid = $_GET["width-of-pyramid"];
-          $heightOfPyramid = $_GET["height-of-pyramid"];
 
           // process
           $volumeOfPyramid = ($lengthOfPyramid * $widthOfPyramid * $heightOfPyramid) / 3;
 
           // output
-          echo "If the pyramid has a length of " . $lengthOfPyramid . "mm, a width of " . $widthOfPyramid . "mm and a height of " . $heightOfPyramid . "mm.";
+          echo "If the pyramid has a length of " . $lengthOfPyramid . "cm";
           echo "<br />";
-          echo "Then the volume of the pyramid will be " . $volumeOfPyramid . " mm³.";
+          echo "Then the volume of the pyramid will be " . $volumeOfPyramid . " cm³.";
           ?>
         </div>
       </div>
