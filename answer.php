@@ -48,15 +48,15 @@
       <div class="page-content-php">
         <div id="user-info">
           <?php
-          $lengthOfPyramid = $_GET["length-of-pyramid"];
+          $radiusOfSphere = $_GET["radius-of-sphere"];
 
           // process
-          $volumeOfPyramid = ($lengthOfPyramid * $widthOfPyramid * $heightOfPyramid) / 3;
+          $volumeOfSphere = (4 / 3) * M_PI * $radiusOfSphere ** 3;
 
           // output
-          echo "If the pyramid has a length of " . $lengthOfPyramid . "cm";
+          echo "If the radius is " . $radiusOfSphere . "cm";
           echo "<br />";
-          echo "Then the volume of the pyramid will be " . $volumeOfPyramid . " cm³.";
+          echo "Then the volume of the sphere will be " . $volumeOfSphere . " cm³.";
           ?>
         </div>
       </div>

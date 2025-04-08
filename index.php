@@ -47,50 +47,26 @@
       </div>
       <br />
       <div class="page-content">
-        Formula: 4/3 
+        Formula: 4 /3 π r³
         <br />
         <br />
         <br />
-        Please enter the pyramid's measurements (cm).
+        Please enter the sphere's measurements in cm.
       </div>
       <div class="page-content-php">
         <form action="answer.php" method="GET">
-          Length:
+          Radius:
           <div class="mdl-textfield mdl-js-textfield">
+            <!-- input pattern attribute -->
             <input
               class="mdl-textfield__input"
-              type=" number"
-              step="any"
+              type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              name="length-of-pyramid">
-            <label class="mdl-textfield__label" for="length-of-pyramid">Enter the length of the pyramid here (cm)</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          cm
-          <br />
-          Width:
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type=" number"
-              step="any"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              name="width-of-pyramid">
-            <label class="mdl-textfield__label" for="width-of-pyramid">Enter the width of the pyramid here (cm)</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          cm
-          <br />
-          Height:
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type=" number"
-              step="any"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              name="height-of-pyramid">
-            <label class="mdl-textfield__label" for="height-of-pyramid">Enter the height of the pyramid here (cm)</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+              name="radius-of-sphere" />
+            <!-- mdl-textfield__label -->
+            <label class="mdl-textfield__label" for="radius-of-sphere">Enter the radius of the sphere (cm)</label>
+            <!-- class "mdl-textfield__error" -->
+            <span class="mdl-textfield__error">Input is not a number.</span>
           </div>
           cm
           <br />
