@@ -54,7 +54,7 @@
           $volumeOfSphere = (4 / 3) * M_PI * $radiusOfSphere ** 3;
 
           // output
-          echo "If the radius is " . $radiusOfSphere . "cm";
+          echo "If the radius is " . $radiusOfSphere . " cm";
           echo "<br />";
           echo "Then the volume of the sphere will be " . $volumeOfSphere . " cm³.";
           ?>
